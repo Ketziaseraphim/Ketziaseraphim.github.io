@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ketzia Seraphim Portfolio Website</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="img/logo.jpg" alt="Ketzia logo">
+      <!-- <h3>[KetziaSeraphim]</h3> -->
+    </div>
+    <button class="nav-toggle" aria-label="toggle navigation"> 
+      <span class="hamburger"></span>
+    </button>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+        <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+        <li class="nav__item"><a href="#services" class="nav__link">My Service</a></li>
+        <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Introduction -->
+  <section class="intro" id="home">
+    <h1 class="section__title section__title--intro">
+      Hi, I am <strong>Ketzia Arella <br>Seraphim</strong>
+    </h1>
+    <p class="section__subtitle section__subtitle--intro">Third-year ICT Student at Swinburne</p>
+    <img src="img/ketziaseraphim.jpg" alt="Picture of Ketzia Seraphim" class="intro__img">
+  </section>
+
+  <!-- My Services -->
+  <section class="my--services" id="services">
+    <h2 class="section__title section__title--services">What I Do</h2>
+    <div class="services">
+      <div class="service">
+        <h3>Programming</h3>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>PHP</li>
+          <li>C/C++</li>
+        </ul>
+      </div>  <!-- services -->
+
+      <div class="service">
+        <h3>Database</h3>
+        <ul>
+          <li>MySQL</li>
+          <li>Oracle</li>
+          <li>Access</li>
+        </ul>
+      </div>  <!-- services -->
+      <div class="service">
+        <h3>CMS</h3>
+        <ul>
+          <li>Wordpress</li>
+          <li>Wix</li>
+          <li>Squarespace</li>
+        </ul>
+      </div>  <!-- services -->
+    </div>
+    <a href="#work" class="btn">My Work</a>
+  </section>
+
+  <!-- About Me -->
+  <section class="about-me" id="about">
+    <h2 class="section__title section__title--about">Who I Am</h2>
+    <p class="section__subtitle section__subtitle--about">
+      Swinburne undergraduate of ICT majored in System Management
+    </p>
+
+    <div class="about-me__body">
+      <p>
+        Currently enrolled at Swinburne University as an ICT student, I am very passionate to seek exciting opportunities to help me grow my skill in web development. I am naturally curious, enjoy learning new things, and perpetually working on improving my skills especially in the area in which I am interested.
+      </p>
+    </div>
+    <img src="img/ketzia.jpg" alt="Picture of Ketzia with eyes closed" class="about-me__img">
+  </section>
+
+  <!-- My Work -->
+  <section class="my-work" id="work">
+    <h2 class="section__title">My Project Portfolio</h2>
+    <p class="section__subtitle">Some Things I've Build Using HTML, CSS, and Javascript</p>
+
+    <div class="container">
+      <!-- Portfolio item 1 -->
+      <div class="card">
+        <div class="imgBx">
+          <img src="img/friendlist.png" alt="Friend List System">
+        </div>
+        <div class="content">
+          <h3>Friends Webpage</h3>
+          <p>Friend System Website that can add friend, show list of friends, and unfriend users.<br>
+            HTML || CSS || PHP || MySql 
+          </p>
+          <a href="friendlist.html" class="btn" target="_blank" rel="noopener noreferrer">Demo</a>
+        </div>
+      </div>
+     
+      <!-- Portfolio item 2 -->
+      <div class="card">
+        <div class="imgBx">
+          <img src="img/gambar.png" alt="Beta Company Website">
+        </div>
+        <div class="content">
+          <h3>Beta Company Website</h3>
+          <p>Demo Website about construction company which is looking for potential applicants.<br>
+           HTML || CSS || Javascript
+          </p>
+          <a href="betacomp/index.html" class="btn">Demo</a>
+        </div>
+      </div>
+
+    </div>
+    <h2 class="section__title">My Mini Project</h2>
+    <div class="container">
+      <!-- Portfolio item 1 -->
+      <div class="card">
+        <div class="imgBx">
+          <img src="img/pricing.png" alt="Pricing with Toggle">
+        </div>
+        <div class="content">
+          <h3>Pricing Webpage</h3>
+          <p>A demo project about build a pricing component with accessible custom toggle.<br>
+            HTML || CSS || JavaScript
+          </p>
+          <a href="https://codepen.io/ketziaaseraphim/full/BazGQLv" class="btn" target="_blank" rel="noopener noreferrer">Demo</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer class="footer">
+    <a href="mailto:chiaarella@gmail.com" class="footer-link">chiaarella@gmail.com</a>
+    <ul class="social-list">
+      <li class="social-list__item">
+        <a href="https://www.linkedin.com/in/ketziaseraphim/" class="social-list__link">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </li>
+      <li class="social-list__item">
+        <a href="https://github.com/Ketziaseraphim" class="social-list__link">
+          <i class="fab fa-github"></i>
+        </a>
+      </li>
+      <li class="social-list__item">
+        <a href="https://www.facebook.com/ketzia.arella/" class="social-list__link">
+          <i class="fab fa-facebook-square"></i>
+        </a>
+      </li>
+      <li class="social-list__item">
+        <a href="https://www.instagram.com/ketziarella/" class="social-list__link">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </li>
+      <li class="social-list__item">
+        <a href="https://codepen.io/ketziaaseraphim" class="social-list__link">
+          <i class="fab fa-codepen"></i>
+        </a>
+      </li>
+    </ul>
+  </footer>
+  <script src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <!-- Mobile Specific Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="assignment 1 web application" />
+  <meta name="keywords" content="assignment, beta company" />
+  <meta name="author" content="Ketzia Arella Seraphim"  />
+  <title>Personal Details</title>
+  
+     
+		<!-- other meta stuff -->    
+		<link href= "styles/style.css" rel="stylesheet" /> 
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+</head>
+
+<body class="color">
+				
+				<!-- <navigation bar on the top> -->
+     <nav class="toppage menubar col-i-2 col-s-11">
+         <a href="index.html" class="barleft">Beta Company</a> 
+		 <div class="right">
+         <a href="jobs.html" class="barright">Jobs</a> 
+         <a href="apply.html" class="barright">Apply Job</a> 
+         <a href="about.html" class="barright">Profile</a>
+		 <a href="enhancement2.html" class="barright">Enhancement</a>
+		 </div>
+     </nav>
+				<!-- </end of navigation bar> -->
+
+<div class="form-style-5">
+	<form id="apply" >
+		<fieldset>
+			<legend><span class="number">1</span> Applicant Details</legend>
+			
+				<h2> Job Reference Number - <span id = "refnum"></span></h2>
+				<div class="form-control">
+					<input type="text" name="first_name" id="firstname" placeholder="First Name" maxlength="20" >
+					<i class="fas fa-check-circle"></i>
+					<i class="fas fa-exclamation-circle"></i>
+					<small>Error Message</small>
+					<!-- <p class="error" id="firsterr"></p> -->
+				</div>
+				<div class="form-control">
+					<input type="text" name="last_name" id="lasttname" placeholder="Last Name" maxlength="20" >
+					<i class="fas fa-check-circle"></i>
+					<i class="fas fa-exclamation-circle"></i>
+					<small>Error Message</small>
+					<!-- <p class="error" id="lasterr"></p> -->
+				</div>
+				<div class="form-control">
+					<input type="date" name="DOB"  id="dob" title="Your Date of Birth" >
+					<small>Error Message</small>
+					<!-- <p class="error" id="doberr"></p> -->
+				</div>
+		</fieldset>
+
+		<fieldset>
+			<legend><span class="number">2</span> Gender</legend>
+			<div class="form-control">
+				<label for="male" ><input type="radio" id="male" name="Gender" value="male"/>Male</label> 
+				<label for="female"><input type="radio" id="female" name="Gender" value="female"/> Female</label> 
+				<small>Error Message</small>
+			</div>
+		</fieldset>
+
+
+
+		<fieldset>
+			<legend><span class="number">3</span> Address</legend>
+			<div class="form-control">
+				<input type="text" name= "Street Address" id="street" placeholder="Street Address" maxlength="40" />
+				<i class="fas fa-check-circle"></i>
+				<i class="fas fa-exclamation-circle"></i>
+				<small>Error Message</small>
+			</div>
+
+			<div class="form-control">
+				<input type="text" name= "Suburb" id="suburb" placeholder ="Suburb/Town" maxlength="40" />
+				<i class="fas fa-check-circle"></i>
+				<i class="fas fa-exclamation-circle"></i>
+				<small>Error Message</small>
+			</div>
+
+			<div class="form-control">
+				<label for="state">State:</label>
+				<select id="state" name="state">
+					<option value="select">Please Select</option> 
+					<option value="VIC">VIC</option>			
+					<option value="NSW">NSW</option>
+					<option value="QLD">QLD</option>
+					<option value="NT">NT</option>
+					<option value="WA">WA</option>
+					<option value="SA">SA</option>
+					<option value="TAS">TAS</option>
+					<option value="ACT">ACT</option>
+				</select> 
+				<small>Error Message</small>
+			</div>
+			<div class="form-control">
+				<input type="text" name= "Postcode" id="postcode" placeholder="Postcode" maxlength="4" pattern="\d{4}"/> 
+				<i class="fas fa-check-circle"></i>
+				<i class="fas fa-exclamation-circle"></i>
+				<small>Error Message</small>
+				<!-- <div class="error" id="pcodeerr"></div> -->
+			</div>
+		</fieldset>
+
+		<fieldset>
+		<legend><span class="number">4</span> Additional Info</legend>
+		<div class="form-control">
+			<input type="email" name="email" id="email" placeholder="Your Email *" >
+			<i class="fas fa-check-circle"></i>
+			<i class="fas fa-exclamation-circle"></i>
+			<small>Error Message</small>
+		</div>
+		<div class="form-control">
+			<input type="number" name= "Phone Number" id="phone" placeholder="Phone Number*" />
+			<i class="fas fa-check-circle"></i>
+			<i class="fas fa-exclamation-circle"></i>
+			<small>Error Message</small>
+		</div>
+		<div class="form-control">
+			<label>Skill List:</label>
+						<label for="workethic"><input type="checkbox" id="workethic" name="Skill" value="work ethic" />
+						Strong Work Ethic</label> 
+						
+						<label for="problem-solving"><input type="checkbox" id="problem-solving" name="Skill" value="problem-solving"/>
+						Problem Solving</label> 
+						
+						<label for="communication"><input type="checkbox" id="communication" name="Skill" value="good communication"/>
+						Good Communication</label> 
+						
+						<label for="teamwork"><input type="checkbox" id="teamwork" name="Skill" value="teamwork"/>
+						Good Team Work</label> 
+						
+						<label for="leadership"><input type="checkbox" id="leadership" name="Skill" value="leadership"/>
+						Leadership</label> 
+						
+						<label for="otherskill"><input type="checkbox" id="otherskill" name="Skill" value="Other_Skill"/>Other Skill</label> 
+						
+			<input type="text" name="Other_Skill" id="otherskills" placeholder="Other Skills you might have...">
+			<small>Error Message</small>
+			<!-- <div class="error" id="skillerr"></div> -->
+		</div>
+	</fieldset>
+<button>Submit</button>
+</form>
+</div>
+<br>
+<!-- Footer -->
+		<div>
+		<footer class="center">
+			<div>Made by Ketzia Arella Seraphim</div>
+			
+		</footer>
+		</div>
+		<script src="validate.js"></script>
+</body>
+</html>
